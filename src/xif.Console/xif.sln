@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xif.Console", "xif.Console.csproj", "{54BC2D9F-192B-41AA-A924-26A1FDDF02C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xifsort.Console", "xifsort.Console.csproj", "{54BC2D9F-192B-41AA-A924-26A1FDDF02C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xif.Lib", "..\xif.Lib\xif.Lib.csproj", "{5393E96D-CBD1-4800-AFBE-A720C2E7DA1F}"
 EndProject
