@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace xif.Lib
 {
-    public interface IImageInfo
+    public interface IParser 
     {
-        FileInfo FileDetails { get; set; }
-        DateTime CapturedOn { get; set; }
-
-
+        IEnumerable<IImageInfo> Parse(string rootDirPath);
     }
 }

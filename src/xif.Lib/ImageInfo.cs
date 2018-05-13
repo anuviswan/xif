@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace xif.Lib
 {
-    public interface IImageInfo
+    class ImageInfo : IImageInfo
     {
-        FileInfo FileDetails { get; set; }
-        DateTime CapturedOn { get; set; }
-
-
+        public FileInfo FileDetails { get; set; }
+        public DateTime CapturedOn { get; set; }
     }
 }
