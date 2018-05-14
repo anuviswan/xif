@@ -12,7 +12,6 @@ namespace xif
     {
         static void Main(string[] args)
         {
-
             if (args.Count() != 2)
                 Console.WriteLine("Arguement missing");
 
@@ -22,9 +21,11 @@ namespace xif
             if(ValidateParameters(sourceDir, destinationDir))
             {
                 var parser = new Parser();
+                var fileCopy = new FileManager();
 
-                foreach (var item in parser.Parse(sourceDir))
+                foreach (var item in parser.Parse(sourceDir).OrderBy(x=>x.CapturedOn))
                 {
+                    fileCopy.FileCopy(item.FileDetails.FullName, item.CapturedOn, destinationDir);
                     Console.WriteLine($"File : {item.FileDetails.FullName}, Date : {item.CapturedOn.ToShortDateString()}");
                 }
             }

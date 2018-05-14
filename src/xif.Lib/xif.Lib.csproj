@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="FileManager.cs" />
     <Compile Include="IImageInfo.cs" />
     <Compile Include="ImageInfo.cs" />
     <Compile Include="IParser.cs" />
