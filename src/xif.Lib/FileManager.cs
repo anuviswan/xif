@@ -30,12 +30,7 @@ namespace xif.Lib
             }
             else
             {
-                var candidatePath = string.Format(
-                    @"{0}\{1}_{2}{3}",
-                    Path.GetDirectoryName(path),
-                    Path.GetFileNameWithoutExtension(path),
-                    count,
-                    Path.GetExtension(path));
+                var candidatePath = $@"{Path.GetDirectoryName(path)}\{Path.GetFileNameWithoutExtension(path)}_{count}{Path.GetExtension(path)}";
 
                 if (!File.Exists(candidatePath))
                 {
