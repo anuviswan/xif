@@ -29,6 +29,8 @@ namespace xif
                     Console.WriteLine($"File : {item.FileDetails.FullName}, Date : {item.CapturedOn.ToShortDateString()}");
                 }
             }
+
+            Console.ReadLine();
             
         }
 

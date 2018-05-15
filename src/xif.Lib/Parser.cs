@@ -12,7 +12,7 @@ namespace xif.Lib
     {
         public IEnumerable<IImageInfo> Parse(string rootDirPath)
         {
-            var files = Directory.GetFiles(rootDirPath);
+            var files = Directory.GetFiles(rootDirPath,"*.jpg",SearchOption.AllDirectories);
             foreach (var file in files)
             {
                 var reader = new ExifLib.ExifReader(file);
